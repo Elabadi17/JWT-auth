@@ -1,0 +1,60 @@
+.sidebar {
+    position: fixed; /* Fix the navbar position */
+    left: 0; /* Align it to the left */
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 10px;
+        button {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          background-color: #ffd700; // Couleur de fond du bouton
+          color: #fff; // Couleur du texte
+          cursor: pointer;
+        
+          // Styles lorsque le curseur survole le bouton
+          &:hover {
+            background-color: #d0b831; // Couleur de fond modifiée
+          }
+        
+          // Styles lorsque le bouton est pressé
+          &:active {
+            background-color: #003f80; // Couleur de fond modifiée
+          }
+        }
+  
+        a {
+          color: #fff;
+          font-size: 16px;
+          text-decoration: none; /* Remove underline from links */
+          display: block;
+  
+          &:hover {
+            color: #ffd700;
+          }
+        }
+        &.active a {
+            color: #ffd700; /* Set color for active link */
+            font-weight: bold; /* Make active link bold */
+            // Add any other styles for the active link
+          }
+      }
+      li:first-child {
+        float: top; /* Align the first item (Home) to the left */
+        padding-bottom: 30px;
+        a{
+            font-size: 20px;
+        }
+      }
+    }
+  }
+  
